@@ -1,4 +1,4 @@
-package com.bridgelabz.jdbc.Day_30_Cab_Invoice_Generator;
+package com.Bridgelabz.CabInvoiceGenerator;
 
 import org.junit.Assert;
 import org.junit.Test;
