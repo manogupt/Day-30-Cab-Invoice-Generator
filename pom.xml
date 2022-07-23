@@ -1,22 +1,25 @@
-package com.bridgelabz.jdbc.Day_30_Cab_Invoice_Generator;
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
 
-import org.junit.Assert;
-import org.junit.Test;
+  <groupId>com.bridgelabz.jdbc</groupId>
+  <artifactId>Day-30-Cab-Invoice-Generator</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
 
-public class CabInvoiceGeneratorTest {
+  <name>Day-30-Cab-Invoice-Generator</name>
+  <url>http://maven.apache.org</url>
 
-	@Test
-	public void givenDistanceAndTime_ShouldReturnTotalFare() {
-		CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
-		double TotalFare = cabInvoiceGenerator.CalculateFare(5.0, 4);
-		Assert.assertEquals(54, TotalFare, TotalFare);
-	}
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
 
-	@Test
-	public void givenDistanceAndTime_ShouldReturnMinFare() {
-		CabInvoiceGenerator cabInvoiceGenerator = new CabInvoiceGenerator();
-		double TotalFare = cabInvoiceGenerator.CalculateFare(0.1, 2);
-		Assert.assertEquals(5, TotalFare, TotalFare);
-	}
-
-}
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
